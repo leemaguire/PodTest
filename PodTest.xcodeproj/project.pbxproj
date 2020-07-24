@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7059328FE9DAC75520496661 /* Pods_PodTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC8FFD50978589F0BD901BB /* Pods_PodTest.framework */; };
 		CF5EF54224CAEA7E00FC0665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5EF54124CAEA7E00FC0665 /* AppDelegate.swift */; };
 		CF5EF54424CAEA7E00FC0665 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5EF54324CAEA7E00FC0665 /* SceneDelegate.swift */; };
 		CF5EF54624CAEA7E00FC0665 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5EF54524CAEA7E00FC0665 /* ContentView.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D459AAC0E1BA62137FFA119 /* Pods-PodTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodTest.debug.xcconfig"; path = "Target Support Files/Pods-PodTest/Pods-PodTest.debug.xcconfig"; sourceTree = "<group>"; };
+		93CDE2596DAAE265A29BA385 /* Pods-PodTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PodTest.release.xcconfig"; path = "Target Support Files/Pods-PodTest/Pods-PodTest.release.xcconfig"; sourceTree = "<group>"; };
 		CF5EF53E24CAEA7E00FC0665 /* PodTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5EF54124CAEA7E00FC0665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF5EF54324CAEA7E00FC0665 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,8 @@
 		CF5EF54A24CAEA7F00FC0665 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CF5EF54D24CAEA7F00FC0665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF5EF54F24CAEA7F00FC0665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF5EF55524CB0EB100FC0665 /* PodTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PodTest.entitlements; sourceTree = "<group>"; };
+		ECC8FFD50978589F0BD901BB /* Pods_PodTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PodTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7059328FE9DAC75520496661 /* Pods_PodTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E956F873FA5A08E802BFE4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECC8FFD50978589F0BD901BB /* Pods_PodTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BE55A0CD038757A086D97B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D459AAC0E1BA62137FFA119 /* Pods-PodTest.debug.xcconfig */,
+				93CDE2596DAAE265A29BA385 /* Pods-PodTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CF5EF53524CAEA7E00FC0665 = {
 			isa = PBXGroup;
 			children = (
 				CF5EF54024CAEA7E00FC0665 /* PodTest */,
 				CF5EF53F24CAEA7E00FC0665 /* Products */,
+				7BE55A0CD038757A086D97B7 /* Pods */,
+				4E956F873FA5A08E802BFE4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +81,7 @@
 		CF5EF54024CAEA7E00FC0665 /* PodTest */ = {
 			isa = PBXGroup;
 			children = (
+				CF5EF55524CB0EB100FC0665 /* PodTest.entitlements */,
 				CF5EF54124CAEA7E00FC0665 /* AppDelegate.swift */,
 				CF5EF54324CAEA7E00FC0665 /* SceneDelegate.swift */,
 				CF5EF54524CAEA7E00FC0665 /* ContentView.swift */,
@@ -82,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF5EF55224CAEA7F00FC0665 /* Build configuration list for PBXNativeTarget "PodTest" */;
 			buildPhases = (
+				A7DD9E26EC265E3A7031EE7E /* [CP] Check Pods Manifest.lock */,
 				CF5EF53A24CAEA7E00FC0665 /* Sources */,
 				CF5EF53B24CAEA7E00FC0665 /* Frameworks */,
 				CF5EF53C24CAEA7E00FC0665 /* Resources */,
+				17AF875DDC2BFCD12C0C1F9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,6 +168,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17AF875DDC2BFCD12C0C1F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PodTest/Pods-PodTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PodTest/Pods-PodTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PodTest/Pods-PodTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7DD9E26EC265E3A7031EE7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PodTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF5EF53A24CAEA7E00FC0665 /* Sources */ = {
@@ -282,8 +352,10 @@
 		};
 		CF5EF55324CAEA7F00FC0665 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D459AAC0E1BA62137FFA119 /* Pods-PodTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodTest/PodTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PodTest/Preview Content\"";
 				DEVELOPMENT_TEAM = YYB57M5EKY;
@@ -295,6 +367,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.realm.PodTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,8 +375,10 @@
 		};
 		CF5EF55424CAEA7F00FC0665 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93CDE2596DAAE265A29BA385 /* Pods-PodTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PodTest/PodTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PodTest/Preview Content\"";
 				DEVELOPMENT_TEAM = YYB57M5EKY;
@@ -315,6 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = io.realm.PodTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
